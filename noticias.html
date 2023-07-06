@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer - Notícias</title>
+    <!-- Colocando icone na aba da página -->
+    <link rel="icon" href="img/logo_SP.jfif">
+    <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="stylesheet" href="css/slide.css">
+</head>
+<!-- Criando menu com tag HEADER -->
+<header>
+    <!-- Tag nav usada para criar menu -->
+    <nav>
+        <div class="topnav">
+            <a class="active" href="index.html">Início</a>
+            <a href="noticias.hmtl">Notícias</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <br><br>
+        <div class="titulo_principal">
+            <h1>Notícias</h1>
+            <br>
+        </div>
+        
+    </section>
+    <main>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/futebol.jfif" style="width:100%">
+                <div class="text">Futebol</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/handboll.jfif" style="width:100%">
+                <div class="text">Handboll</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/esporte.jpg" style="width:95%">
+                <div class="text">Esporte</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- circulo de noticias -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <div id="coteudo"><!-- Abrimos a div conteúdo -->
+        <h2>Curiosidades sobre esportes</h2>
+        <div id="conteudo-esquerdo">
+            
+            <p>1 – Você já parou para pensar por que as bolas
+                de basquete são laranja? A cor não foi escolhida por
+                acaso. Além do tom alaranjado, elas são brilhantes e
+                isso serve para que os jogadores e também os espectadores
+                possam identificá-la facilmente. Além disso, aquelas linhas na
+                cor preta que contornam a bola também tem uma utilidade. Elas a tornam
+                mais durável, contribuindo para manter sua forma redonda.</p>
+            <p>2 – Já reparou que as ginastas sempre se apresentam descalças? Elas não poderiam fazer isso de meias ou
+                sapatos? A resposta é não. Os pés oferecem mais tração e beneficiam os movimentos. Além disso, caso seja
+                necessário agarrar algo com os pés, os dedos ajudam muito.</p>
+        </div>
+        <div id="conteudo-direito">
+            <p>2 – Já reparou que as ginastas sempre se apresentam descalças? Elas não poderiam fazer isso de meias ou
+                sapatos? A resposta é não. Os pés oferecem mais tração e beneficiam os movimentos. Além disso, caso seja
+                necessário agarrar algo com os pés, os dedos ajudam muito.</p>
+            <p>4 – Você sabia que ciclistas profissionais fazem xixi durante a corrida? Pois é, quando os circuitos são
+                longos e os ciclistas passam vários dias fazendo o percurso, acabam ficando muitas horas em cima do bike
+                e ingerindo bastante água. Quando é possível, eles param a corrida e urinam no acostamento, mas se isso
+                for atrasar a corrida e prejudicar o desempenho, eles acabam fazendo xixi enquanto pedalam mesmo.
+
+            </p>
+        </div>
+    </div><!-- Fechando a div conteúdo -->
+    <footer class="fixo">
+        <img id="logo" src="img/logo_SP.jfif" alt="">
+        <h3>Desenvolvido por: Astarote</h3>
+        <a href="mailto:astarote@gmail.com">astarote@gmail.com</a>
+
+    </footer>
+</body>
+<script src="js/slide.js"></script>
+
+</html>

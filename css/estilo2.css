@@ -1,0 +1,212 @@
+/* Importando fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+/* Mudando as configurações de toda a página */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000bb;
+    height: auto;
+}
+
+/* Barra de navegação */
+.topnav {
+    background-color: #010101;
+    overflow: hidden;
+    /* O overflow é uma propriedade do CSS utilizada para
+                       tratar conteúdos que ultrapassam os limites de um elemento. 
+                       quando usamios o valor hidden, é quando queremos esconder a parte de um elemento
+                       que ele não passe do tmanho determinado*/
+}
+
+/* Estilo  de texto dentro da tag lin */
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', 'sans-serif';
+}
+
+/* Mudando a cor da div quando passar mo mouse */
+.topnav a:hover {
+    /* background-color: #09bdd4; */
+    color: #e61430bb;
+    font-weight: bold;
+    animation-name: teste;
+    animation-duration: 2s;
+}
+
+/* Criando animação */
+@keyframes teste {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: blueviolet;
+    }
+}
+
+/* cor da div ativada(Ínicio) */
+.topnav a.active {
+    background-color: rgba(72, 30, 189, 0.582);
+}
+
+
+/* Corpo da págiga */
+
+
+
+
+/* div página noticias */
+.texto1 {
+    font-size: 40px;
+    font-family: 'Oswald', 'sans-serif';
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: solid rgb(0, 0, 0)
+}
+
+.titulo_principal {
+    font-size: 40px;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: solid rgb(12, 1, 1);
+    margin-bottom: 10px;
+}
+
+/*div conteudo*/
+#conteudo{
+ 
+    position: relative;
+    width: 100%;
+    padding-right: 300px;
+    background-color: aqua;
+   
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* divs em colunas */
+#conteudo-esquerdo {
+    /* Aqui vamos definir a largura e altura da div */
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-left: 900px;
+    margin-right: 50px;
+    /* O atribuirFloat é utilizado para fazermos nosso bloco(div)literalmente flutue
+    e se posicione onde quremos que esse bloco irá se posicionar na parte esquerda da página*/
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#conteudo-direito {
+    /* Aqui vamos definir a largura e altura da div */
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    font-size: 17px;
+    /* O atributi Float é utilizado para fazermos nosso bloco(div)literalmente flutue
+    e se posicione onde quremos que esse bloco irá se posicionar na parte esquerda da página*/
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* trabalhando com imagem e texto pagina index */
+.container{
+margin-left: 15px;
+margin-right: 15px;
+}
+h2{
+    color: rgb(249, 250, 248);
+    font-size: 40px;
+
+}
+/* div principal */
+.principal{
+    width: auto;
+    display: inline-block;
+}
+.img1{
+    margin: 15px;
+    padding-top: 65px;
+    padding-left: 35px;
+    width:550px;
+    border: solid;
+    display: inline-block;
+    
+    height: 430px;
+    float: left;
+    background-color: #000000;
+}
+.img1 img{
+    width:500px;
+    height: 350px;
+    }
+.help{
+    background-color: #000000;
+    font-size: 25px;
+    color: #fff;
+    margin: 15px;
+    padding: 45px;
+    border: solid;
+    text-align: left;
+    display: inline-block;
+    text-align: justify;
+    width: 60%;
+    float: right;
+    height: 400px;
+}
+.text{
+    margin: 15px;
+    text-align: justify;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+/* Fixando o footer no final da página */
+.fixo {
+
+    position: fixed;
+    bottom: 2px;
+    /* margem externa */
+    padding-top: 6px;
+    /* mudando a margin superior */
+    padding-bottom: 6px;
+    /* Mudando a margem interna superior */
+    background-color: rgba(255, 22, 14, 0.69);
+    min-width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fixo a{
+ text-decoration: none;   
+ color: #fff;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
